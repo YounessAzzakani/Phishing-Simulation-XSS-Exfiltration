@@ -1,7 +1,7 @@
 # Phishing Simulation & XSS Exfiltration — report.md
 
 ## Purpose
-This lab demonstrates a chained attack combining social engineering (phishing), site cloning and a reflected XSS vector to exfiltrate session cookies and perform session hijacking. The exercise is strictly educational and was executed in an isolated virtual environment. :contentReference[oaicite:1]{index=1}
+This lab demonstrates a chained attack combining social engineering (phishing), site cloning and a reflected XSS vector to exfiltrate session cookies and perform session hijacking. The exercise is strictly educational and was executed in an isolated virtual environment.
 
 ---
 
