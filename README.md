@@ -4,6 +4,12 @@
 
 ---
 
+
+## Ethical & Safety Note
+This lab was performed in a controlled, isolated environment for educational purposes. Do **not** reproduce these techniques against systems you do not own or have explicit authorization to test. Unauthorized testing is illegal and unethical.
+
+---
+
 ## Purpose
 This lab demonstrates a chained attack combining social engineering (phishing), site cloning and a reflected XSS vector to exfiltrate session cookies and achieve session hijacking. The exercise was executed in an isolated virtual environment for educational purposes only.
 
@@ -63,12 +69,7 @@ This lab demonstrates a chained attack combining social engineering (phishing), 
 - Use inbound link rewriting/scanning to check links at click time.  
 - Implement network segmentation to limit reach from compromised workstations.
 
----
 
-## Ethical & Safety Note
-This lab was performed in a controlled, isolated environment for educational purposes. Do **not** reproduce these techniques against systems you do not own or have explicit authorization to test. Unauthorized testing is illegal and unethical.
-
----
 
 ## Conclusion
 A simple chain (site cloning + phishing + reflected XSS) can lead to full session hijacking when applications expose XSS flaws and session cookies are accessible via JavaScript. Defenses require layered measures: secure coding (prevent XSS), hardened session attributes, robust email authentication, network controls, and ongoing user training. Reproducing such attacks in labs helps validate detection rules and improve incident response playbooks.
