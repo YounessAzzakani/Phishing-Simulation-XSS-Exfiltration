@@ -9,7 +9,7 @@ This lab demonstrates a chained attack combining social engineering (phishing), 
 - **SEToolkit (Social-Engineer Toolkit)** — site cloner and mass mailer used to create a credential-harvesting page and to send phishing emails.
 - **Python 3 `http.server`** — lightweight HTTP server on the attacker VM to receive exfiltrated data (cookies).  
 - **Browser extensions (CookieManager+)** — for manual injection of stolen session cookies to validate session hijacking. 
-- **Manual web testing** — identification of reflected XSS points (e.g. `search.php?keyword=`), URL-encoding payloads and chaining them into phishing links. :contentReference[oaicite:5]{index=5}
+- **Manual web testing** — identification of reflected XSS points (e.g. `search.php?keyword=`), URL-encoding payloads and chaining them into phishing links.
 
 **Technique summary:** clone a login page → lure victim via phishing email → victim clicks link containing URL-encoded XSS payload → the payload executes in victim's browser and sends `document.cookie` to attacker server → attacker extracts cookie and injects it into their browser to hijack the session.
 
@@ -32,7 +32,7 @@ This lab demonstrates a chained attack combining social engineering (phishing), 
    - Set session cookies with `HttpOnly`, `Secure`, and appropriate `SameSite` attributes to block access via `document.cookie` and limit cross-site exfiltration. 
 
 2. **Harden session management**
-   - Reduce session idle timeouts and implement anomaly detection for session usage (IP/geolocation/browser fingerprinting). :contentReference[oaicite:14]{index=14}  
+   - Reduce session idle timeouts and implement anomaly detection for session usage (IP/geolocation/browser fingerprinting).
    - Invalidate sessions after critical events (password change, suspicious activity).
 
 3. **Improve email authentication & filtering**
