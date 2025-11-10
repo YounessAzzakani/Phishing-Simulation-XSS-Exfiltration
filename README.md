@@ -1,7 +1,6 @@
 # Phishing Simulation & XSS Exfiltration — Report
 
 **Status:** Educational lab (isolated environment)  
-**Filename:** projects/phishing_simulation_xss_exfiltration/report.md
 
 ---
 
